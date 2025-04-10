@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HONOR X9C</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #2d3e50;
+            color: white;
+            padding: 20px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+        }
+
+        #specs {
+            margin-top: 50px;
+            display: none;
+        }
+
+        .specs-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .specs-list li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #2d3e50;
+            color: white;
+            padding: 10px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Телефон HONOR X9C</h1>
+    <p>Узнайте все характеристики устройства, нажав на кнопку ниже!</p>
+    <button class="button" id="showSpecsBtn">Перейти к характеристикам</button>
+</header>
+
+<section id="specs">
+    <h2>Характеристики HONOR X9C</h2>
+    <ul class="specs-list">
+        <li><strong>Экран:</strong> 6.81 дюйма, Full HD+, 120 Гц</li>
+        <li><strong>Процессор:</strong> Qualcomm Snapdragon 695 5G</li>
+        <li><strong>Камера:</strong> Основная 108 МП + 8 МП ультраширокий + 2 МП макро</li>
+        <li><strong>Фронтальная камера:</strong> 16 МП</li>
+        <li><strong>Память:</strong> 6/8 ГБ ОЗУ, 128 ГБ/256 ГБ встроенной памяти</li>
+        <li><strong>Аккумулятор:</strong> 4800 мАч, зарядка 66 Вт</li>
+        <li><strong>ОС:</strong> Android 12 с Magic UI 6.0</li>
+        <li><strong>Цвета:</strong> Черный, синий, серебристый</li>
+        <li><strong>Подключения:</strong> 5G, Wi-Fi 6, Bluetooth 5.1</li>
+        <li><strong>Размеры:</strong> 163.5 x 74.9 x 8.1 мм</li>
+        <li><strong>Вес:</strong> 189 г</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2025 HONOR. Все права защищены.</p>
+</footer>
+
+<script>
+    document.getElementById('showSpecsBtn').addEventListener('click', function() {
+        document.getElementById('specs').style.display = 'block';
+    });
+</script>
+
+</body>
+</html>
